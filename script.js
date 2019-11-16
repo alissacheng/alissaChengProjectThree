@@ -11,23 +11,15 @@ function newDeck() {
     for(i=0; i< suits.length; i++){
 
         for(x=0; x< ranks.length; x++){
-    
             let weight = parseInt(ranks[x]);
-            let name = ranks[x]
     
             if(ranks[x] === "J" || ranks[x] === "Q" || ranks[x] === "K"){
                 weight = 10;
             }else if(ranks[x] === "A"){
                 weight = 11;
-                name = "Ace"
             };
-    
-            if (ranks[x] === "J"){name = "Jack"};
-            if (ranks[x] === "Q"){name = "Queen"};
-            if (ranks[x] === "K"){name = "King"};
             
-            let card = {name: name, rank:ranks[x], suit: suits[i], weight: weight};
-    
+            let card = {rank:ranks[x], suit: suits[i], weight: weight};
             deck.push(card);
         }
     }
@@ -164,17 +156,6 @@ function calculate(){
     ace();
 }
 
-//Check if game is over
-function moneyCheck (){
-
-    for(i=0; i<players.length;i++){
-        if(players[i].money === 0){
-            alert(`${players[i].name} wins all the money!!!`);
-            $(".new-round").attr("disabled", true);
-        };
-    };
-};
-
 //Turn the weight of an ace from 11 to 1 if hand goes over 21
 function ace(){
     for (i=0; i < players[currentPlayer].hand.length; i++){
@@ -238,9 +219,9 @@ function displayCards (){
 
     //click cards to show
     
-    $(".hand").on("click", "div", function(){
-        $(this).toggleClass("clicked");
-    });
+$(".hand").on("click", "div", function(){
+    $(this).toggleClass("clicked");
+});
 
 
 function displayMoney() {
@@ -256,6 +237,17 @@ function displayMoney() {
     };
 
     moneyCheck();
+};
+
+//Check if game is over
+function moneyCheck (){
+
+    for(i=0; i<players.length;i++){
+        if(players[i].money === 0){
+            alert(`${players[i].name} owes $40!!!`);
+            $(".new-round").attr("disabled", true);
+        };
+    };
 };
 
 //game over disables hit me and stay buttons

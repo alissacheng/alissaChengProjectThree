@@ -1,0 +1,117 @@
+.hand {
+    display: flex;
+}
+
+.hand .clicked{
+    color: black;
+    background: white;
+}
+
+.hand .clicked span{
+    color: red;
+}
+
+.hand > div:first-of-type{
+    color: black;
+    background: white;
+    cursor: default;
+}
+
+.hand > div:first-of-type span,
+.hand > div:first-of-type span{
+    color: red;
+}
+
+.hand > div {
+    cursor: pointer; 
+    margin-right: 10px;
+    border: 2px solid black;
+    width: 110px;
+    height: 152px;
+    background-image: url(../card.png);
+    background-size: cover;
+    color: transparent;
+    border-radius: 5px;
+    font-family: 'Noto Sans', sans-serif;
+    transition: 0.3s;
+
+    p{
+        font-size: 2.5rem;
+        margin: 0;
+        padding-top: 10px;
+        text-align: center;
+        word-spacing: 20px;
+    }
+
+
+    h2{
+        text-align: center;
+        font-size: 7.5rem;
+        margin: 0;
+    }
+
+    h2 span{
+        text-align: center;
+        font-size: 7.5rem;
+        margin: 0;
+        color: transparent;
+    }
+
+    span{
+        font-size: 3rem;
+        color: transparent;
+    }
+}
+
+.hand > div:nth-of-type(6){
+    margin-right: 0;
+}
+
+.banner{
+    font-family: 'Coda', cursive;
+    font-size: 3rem;
+    margin: 0;
+    width: 735px;
+    padding-left: 10px;
+    padding-bottom: 2.5px;
+    padding-top: 2.5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+
+    &::before{
+        content: "> ";
+    }
+}
+
+main{
+    width: 735px;
+    background: rgb(65, 164, 86);
+    color: rgb(23, 36, 44);
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.name{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+}
+
+.sub-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-money{
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    align-self: center;
+
+    h2{
+        margin-right: 10px;
+        font-size: 2rem;
+    }
+}

@@ -188,29 +188,45 @@ function displayCards (){
     $(".hand").empty();
 //player one
     for(i=0; i<playerOneHand.length; i++){
-        let card = `<div class="card">
-        <p>${playerOneHand[i].rank} ${playerOneHand[i].suit}</p>
-        <h2>${playerOneHand[i].suit}</h2>
+        let card = `
+        <div class="card">
+            <div class="container">
+                <p>${playerOneHand[i].rank}</p>
+                <p class="suit">${playerOneHand[i].suit}</p>
+            </div>
+            <h2>${playerOneHand[i].suit}</h2>
         </div>`
 
         if(playerOneHand[i].suit === "♦" || playerOneHand[i].suit === "♥"){
-            card = `<div class="card">
-            <p><span>${playerOneHand[i].rank} ${playerOneHand[i].suit}</span></p>
-            <h2><span>${playerOneHand[i].suit}</span></h2>
+            card = `
+            <div class="card">
+                <div class="container">
+                    <p class="rank"><span>${playerOneHand[i].rank}</span></p>
+                    <p class="suit"><span>${playerOneHand[i].suit}</span></p>
+                </div>
+                <h2><span>${playerOneHand[i].suit}</span></h2>
             </div>`
         }
         $(".player-one .hand").append(card);
     };
 //player two
     for(i=0; i<playerTwoHand.length; i++){
-        let card = `<div class="card">
-        <p>${playerTwoHand[i].rank} ${playerTwoHand[i].suit}</p>
-        <h2>${playerTwoHand[i].suit}</h2>
-        </div>`
+        let card = 
+            `<div class="card">
+                <div class="container">
+                    <p>${playerTwoHand[i].rank}</p>
+                    <p class="suit">${playerTwoHand[i].suit}</p>
+                </div>
+                <h2>${playerTwoHand[i].suit}</h2>
+            </div>`
         if(playerTwoHand[i].suit === "♦" || playerTwoHand[i].suit === "♥"){
-            card = `<div class="card">
-            <p><span>${playerTwoHand[i].rank} ${playerTwoHand[i].suit}</span></p>
-            <h2><span>${playerTwoHand[i].suit}</span></h2>
+            card = 
+            `<div class="card">
+                <div class="container">
+                    <p><span>${playerTwoHand[i].rank}</span></p>
+                    <p><span>${playerTwoHand[i].suit}</span></p>
+                </div>
+                <h2><span>${playerTwoHand[i].suit}</span></h2>
             </div>`
         }
         $(".player-two .hand").append(card);

@@ -129,6 +129,7 @@
     border-radius: 5px;
     font-family: 'Noto Sans', sans-serif;
     transition: background 0.3s;
+    text-align: center;
 
     @include small-tablet{
         width: 82px;
@@ -154,7 +155,7 @@
         margin: 0;
         padding-top: 10px;
         text-align: center;
-        word-spacing: 20px;
+        // word-spacing: 20px;
 
         @include small-tablet {
             padding-top: 5px;
@@ -162,7 +163,7 @@
 
         @include mobile{
             font-size: 1.75rem;
-            word-spacing: 10px;
+            // word-spacing: 10px;
         }
     }
 
@@ -204,5 +205,16 @@
             font-size: 1.75rem;
             word-spacing: 10px;
         }
+    }
+}
+
+//position rank and suit of each card in top row
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    @include landscape-mobile{
+        padding: 0 5px;
     }
 }

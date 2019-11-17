@@ -113,7 +113,7 @@ $(".stay").on("click", gameApp.stay = function(){
         currentPlayer += 1;
         $(".banner").text("Player Two's Turn");
     }else{
-        final();
+        gameApp.final();
     };
 });
 

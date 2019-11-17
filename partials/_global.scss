@@ -23,12 +23,6 @@ html{
     margin: 0 auto;
 }
 
-/* Ensure image default styles in main section is fixed */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 body{
     @include flexCenter;
     flex-direction: column;

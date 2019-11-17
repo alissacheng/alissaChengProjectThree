@@ -234,11 +234,17 @@ gameApp.displayCards = function (){
 };
 
 //click cards to show
-    
-$(".hand").on("click", "div", gameApp.revealCard = function(){
-    $(this).toggleClass("clicked");
+$(".player-one .hand").on("click", "div", gameApp.revealCard = function(){
+    if(currentPlayer === 0){
+        $(this).toggleClass("clicked");
+    }
 });
 
+$(".player-two .hand").on("click", "div", gameApp.revealCard = function(){
+    if(currentPlayer === 1){
+        $(this).toggleClass("clicked");
+    }
+});
 
 gameApp.displayMoney = function() {
 //player one

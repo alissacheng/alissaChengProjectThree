@@ -197,14 +197,17 @@ html {
   box-sizing: border-box;
   font-size: 2rem;
   font-weight: 400; }
+  @media (max-width: 575px) {
+    * {
+      font-size: 1.5rem; } }
+  @media (max-width: 500px) {
+    * {
+      font-size: 1.25rem; } }
 
 .wrapper {
   max-width: 1200px;
-  width: 80%;
+  width: 100%;
   margin: 0 auto; }
-  @media (max-width: 1100px) {
-    .wrapper {
-      width: 90%; } }
 
 /* Ensure image default styles in main section is fixed */
 img {
@@ -231,6 +234,24 @@ body {
 section {
   width: 100%; }
 
+main {
+  width: 735px;
+  background: #41a456;
+  color: #17242c;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px; }
+  @media (max-width: 765px) {
+    main {
+      width: 568px; } }
+  @media (max-width: 575px) {
+    main {
+      width: 476px; } }
+  @media (max-width: 500px) {
+    main {
+      width: 316px;
+      padding: 5px; } }
+
 .visuallyHidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -255,11 +276,35 @@ h1 {
   padding-bottom: 10px;
   text-align: center;
   letter-spacing: 1.15rem; }
+  @media (max-width: 765px) {
+    h1 {
+      font-size: 6rem; } }
+  @media (max-width: 575px) {
+    h1 {
+      letter-spacing: initial; } }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 4rem; } }
   h1 span {
     font-size: 10rem; }
+    @media (max-width: 765px) {
+      h1 span {
+        font-size: 8rem; } }
+    @media (max-width: 500px) {
+      h1 span {
+        font-size: 5rem; } }
 
 header {
   width: 735px; }
+  @media (max-width: 765px) {
+    header {
+      width: 568px; } }
+  @media (max-width: 575px) {
+    header {
+      width: 476px; } }
+  @media (max-width: 500px) {
+    header {
+      width: 316px; } }
 
 @-webkit-keyframes neon {
   from {
@@ -272,6 +317,31 @@ header {
     text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92); }
   to {
     text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2; } }
+
+.banner {
+  font-family: 'Coda', cursive;
+  font-size: 3rem;
+  margin: 0;
+  width: 735px;
+  padding-left: 10px;
+  padding-bottom: 2.5px;
+  padding-top: 2.5px;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white; }
+  .banner::before {
+    content: "> "; }
+  @media (max-width: 765px) {
+    .banner {
+      width: 568px; } }
+  @media (max-width: 575px) {
+    .banner {
+      width: 476px;
+      font-size: 2.75rem; } }
+  @media (max-width: 500px) {
+    .banner {
+      width: 316px;
+      font-size: 2.5rem; } }
 
 .buttons {
   display: -webkit-box;
@@ -296,91 +366,18 @@ header {
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s; }
+    @media (max-width: 575px) {
+      .buttons button {
+        font-size: 1.5rem;
+        width: 120px;
+        margin-top: 2px; } }
+    @media (max-width: 500px) {
+      .buttons button {
+        font-size: 1.5rem;
+        width: 70px; } }
     .buttons button:hover, .buttons button:focus {
       background: #fdc449;
       border-color: rgba(253, 196, 73, 0.85); }
-
-.hand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.hand .clicked {
-  color: black;
-  background: white; }
-  .hand .clicked span {
-    color: red; }
-
-.hand > div:first-of-type {
-  color: black;
-  background: white;
-  cursor: default; }
-
-.hand > div:first-of-type span,
-.hand > div:first-of-type span {
-  color: red; }
-
-.hand > div {
-  cursor: pointer;
-  margin-right: 10px;
-  border: 2px solid black;
-  width: 110px;
-  height: 152px;
-  background-image: url(../card.png);
-  background-size: cover;
-  color: transparent;
-  border-radius: 5px;
-  font-family: 'Noto Sans', sans-serif;
-  -webkit-transition: background 0.3s;
-  -o-transition: background 0.3s;
-  transition: background 0.3s; }
-  .hand > div p {
-    font-size: 2.5rem;
-    margin: 0;
-    padding-top: 10px;
-    text-align: center;
-    word-spacing: 20px; }
-  .hand > div h2 {
-    text-align: center;
-    font-size: 7.5rem;
-    margin: 0; }
-  .hand > div h2 span {
-    text-align: center;
-    font-size: 7.5rem;
-    margin: 0;
-    color: transparent; }
-  .hand > div span {
-    font-size: 3rem;
-    color: transparent; }
-
-.hand > div:nth-of-type(6) {
-  margin-right: 0; }
-
-.banner {
-  font-family: 'Coda', cursive;
-  font-size: 3rem;
-  margin: 0;
-  width: 735px;
-  padding-left: 10px;
-  padding-bottom: 2.5px;
-  padding-top: 2.5px;
-  border: 2px solid white;
-  border-radius: 5px;
-  color: white; }
-  .banner::before {
-    content: "> "; }
-
-main {
-  width: 735px;
-  background: #41a456;
-  color: #17242c;
-  padding: 10px;
-  border: 2px solid white;
-  border-radius: 5px; }
-
-.name {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 2rem; }
 
 .sub-title {
   display: -webkit-box;
@@ -389,6 +386,19 @@ main {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media (max-width: 575px) {
+    .sub-title {
+      margin-top: 5px; } }
+
+.name {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem; }
+  @media (max-width: 575px) {
+    .name {
+      font-size: 1.5rem;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; } }
 
 .display-money {
   display: -webkit-box;
@@ -404,3 +414,106 @@ main {
   .display-money h2 {
     margin-right: 10px;
     font-size: 2rem; }
+    @media (max-width: 575px) {
+      .display-money h2 {
+        font-size: 1.5rem; } }
+    @media (max-width: 500px) {
+      .display-money h2 {
+        font-size: 1.25rem; } }
+
+.hand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .hand .clicked {
+    color: black;
+    background: white; }
+    .hand .clicked span {
+      color: red; }
+
+.hand > div:first-of-type {
+  color: black;
+  background: white;
+  cursor: default; }
+  .hand > div:first-of-type span {
+    color: red; }
+
+.hand > div:nth-of-type(6) {
+  margin-right: 0; }
+  @media (max-width: 575px) {
+    .hand > div:nth-of-type(6) {
+      margin-right: 10px; } }
+  @media (max-width: 500px) {
+    .hand > div:nth-of-type(6) {
+      margin-right: 5px; } }
+
+.hand > div {
+  cursor: pointer;
+  margin-right: 10px;
+  border: 2px solid black;
+  width: 110px;
+  height: 152px;
+  background-image: url(../assets/card.png);
+  background-size: cover;
+  color: transparent;
+  border-radius: 5px;
+  font-family: 'Noto Sans', sans-serif;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s; }
+  @media (max-width: 765px) {
+    .hand > div {
+      width: 82px;
+      height: 114px;
+      margin-top: 5px; } }
+  @media (max-width: 500px) {
+    .hand > div {
+      width: 56px;
+      height: 77px;
+      margin-right: 5px; } }
+  @media (max-width: 575px) {
+    .hand > div:nth-of-type(5) {
+      margin-right: 0; } }
+  .hand > div p {
+    font-size: 2.5rem;
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    word-spacing: 20px; }
+    @media (max-width: 765px) {
+      .hand > div p {
+        padding-top: 5px; } }
+    @media (max-width: 500px) {
+      .hand > div p {
+        font-size: 1.75rem;
+        word-spacing: 10px; } }
+  .hand > div h2 {
+    text-align: center;
+    font-size: 7.5rem;
+    margin: 0; }
+    @media (max-width: 765px) {
+      .hand > div h2 {
+        font-size: 6rem; } }
+    @media (max-width: 500px) {
+      .hand > div h2 {
+        font-size: 4rem; } }
+    .hand > div h2 span {
+      text-align: center;
+      font-size: 7.5rem;
+      margin: 0;
+      color: transparent; }
+      @media (max-width: 765px) {
+        .hand > div h2 span {
+          font-size: 6rem; } }
+      @media (max-width: 500px) {
+        .hand > div h2 span {
+          font-size: 4rem; } }
+  .hand > div span {
+    font-size: 3rem;
+    color: transparent; }
+    @media (max-width: 500px) {
+      .hand > div span {
+        font-size: 1.75rem;
+        word-spacing: 10px; } }

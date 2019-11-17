@@ -9,13 +9,45 @@ h1{
     text-align: center;
     letter-spacing: 1.15rem;
 
+    @include small-tablet{
+        font-size: 6rem;
+    }
+
+    @include landscape-mobile{
+        letter-spacing: initial;
+    }
+
+    @include mobile {
+        font-size: 4rem;
+    }
+
         span{
             font-size: 10rem;
+
+            @include small-tablet {
+                font-size: 8rem;
+            }
+
+            @include mobile {
+                font-size: 5rem;
+            }
     }
 }
 
 header{
     width: 735px;
+
+    @include small-tablet{
+        width: 568px;
+    }
+
+    @include landscape-mobile{
+        width: 476px;
+    }
+
+    @include mobile {
+        width: 316px;
+    }
 }
 
 
@@ -40,28 +72,34 @@ header{
     }
   }
 
-.buttons {
-    display: flex;
-    justify-content: space-evenly;
-    button{
-        cursor: pointer; 
-        font-size: 2rem;
-        width: 150px;
-        background: rgb(255, 174, 0);
-        padding: 2px;
-        border-color: rgba(255, 174, 0, 0.85);
-        border-radius: 5px;
-        font-family: 'Coda', cursive;
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 1px;
-        color: rgb(23, 36, 44);
-        transition: 0.4s;
+//Banner narrating events of game
+.banner{
+    font-family: 'Coda', cursive;
+    font-size: 3rem;
+    margin: 0;
+    width: 735px;
+    padding-left: 10px;
+    padding-bottom: 2.5px;
+    padding-top: 2.5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
 
-        &:hover,
-        &:focus{
-            background: rgb(253, 196, 73);
-            border-color: rgba(253, 196, 73, 0.85);
-        }
+    &::before{
+        content: "> ";
+    }
+
+    @include small-tablet{
+        width: 568px;
+    }
+
+    @include landscape-mobile{
+        width: 476px;
+        font-size: 2.75rem;
+    }
+
+    @include mobile{
+        width: 316px;
+        font-size: 2.5rem;
     }
 }

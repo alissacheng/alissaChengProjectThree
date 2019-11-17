@@ -135,14 +135,13 @@ gameApp.final = function (){
         players[1].money += 2;
     };
 
-    blackjack();
-    displayMoney();
+    gameApp.blackjack();
+    gameApp.displayMoney();
 }
 
 //Calculate Score
 gameApp.calculate = function (){
 
-    players[0].score = 0;
     players[1].score = 0;
 
     for(i=0; i<playerOneHand.length; i++){

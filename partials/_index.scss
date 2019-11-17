@@ -2,7 +2,7 @@
 .buttons {
     display: flex;
     justify-content: space-evenly;
-    
+
     button{
         cursor: pointer; 
         font-size: 2rem;
@@ -41,8 +41,8 @@
 .sub-title{
     display: flex;
     justify-content: space-between;
-    @include landscape-mobile{
-        margin-top: 5px;
+    @include small-tablet{
+        padding-top: 5px;
     }
 }
 
@@ -50,10 +50,10 @@
 .name{
     font-family: 'Press Start 2P', cursive;
     font-size: 2rem;
+    align-self: center;
 
     @include landscape-mobile{
         font-size: 1.5rem;
-        align-self: center;
     }
 }
 

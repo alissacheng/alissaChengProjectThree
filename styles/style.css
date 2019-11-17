@@ -384,19 +384,19 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  @media (max-width: 575px) {
+  @media (max-width: 765px) {
     .sub-title {
-      margin-top: 5px; } }
+      padding-top: 5px; } }
 
 .name {
   font-family: 'Press Start 2P', cursive;
-  font-size: 2rem; }
+  font-size: 2rem;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center; }
   @media (max-width: 575px) {
     .name {
-      font-size: 1.5rem;
-      -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center; } }
+      font-size: 1.5rem; } }
 
 .display-money {
   display: -webkit-box;

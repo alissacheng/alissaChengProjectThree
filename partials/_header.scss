@@ -52,7 +52,7 @@ header{
 
 
 @keyframes neon {
-    from {
+    0% {
       text-shadow:
       0 0 6px rgba(202,228,225,0.92),
       0 0 30px rgba(202,228,225,0.34),
@@ -61,7 +61,7 @@ header{
       0 0 34px rgba(30,132,242,0.78),
       0 0 54px rgba(30,132,242,0.92);
     }
-    to {
+    100% {
       text-shadow:
       0 0 6px rgba(202,228,225,0.98),
       0 0 30px rgba(202,228,225,0.42),
@@ -100,6 +100,6 @@ header{
 
     @include mobile{
         width: 316px;
-        font-size: 2.35rem;
+        font-size: 2.45rem;
     }
 }

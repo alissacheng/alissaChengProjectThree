@@ -21,7 +21,8 @@ h1{
         font-size: 4rem;
     }
 
-        span{
+        &::after{
+            content: " ♠";
             font-size: 10rem;
 
             @include small-tablet {
@@ -100,6 +101,6 @@ header{
 
     @include mobile{
         width: 316px;
-        font-size: 2.5rem;
+        font-size: 2.55rem;
     }
 }

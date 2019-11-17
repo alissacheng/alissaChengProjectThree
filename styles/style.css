@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -285,13 +286,14 @@ h1 {
   @media (max-width: 500px) {
     h1 {
       font-size: 4rem; } }
-  h1 span {
+  h1::after {
+    content: " ♠";
     font-size: 10rem; }
     @media (max-width: 765px) {
-      h1 span {
+      h1::after {
         font-size: 8rem; } }
     @media (max-width: 500px) {
-      h1 span {
+      h1::after {
         font-size: 5rem; } }
 
 header {
@@ -341,7 +343,7 @@ header {
   @media (max-width: 500px) {
     .banner {
       width: 316px;
-      font-size: 2.5rem; } }
+      font-size: 2.55rem; } }
 
 .buttons {
   display: -webkit-box;

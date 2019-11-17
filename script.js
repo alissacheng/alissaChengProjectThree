@@ -142,6 +142,7 @@ gameApp.final = function (){
 //Calculate Score
 gameApp.calculate = function (){
 
+    players[0].score =0;
     players[1].score = 0;
 
     for(i=0; i<playerOneHand.length; i++){

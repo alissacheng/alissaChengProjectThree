@@ -207,7 +207,7 @@ html {
 
 .wrapper {
   max-width: 1200px;
-  width: 100%;
+  width: 60%;
   margin: 0 auto; }
 
 body {
@@ -226,9 +226,6 @@ body {
   flex-direction: column;
   background-color: #02021b;
   padding-bottom: 15px; }
-
-section {
-  width: 100%; }
 
 main {
   width: 735px;
@@ -377,7 +374,7 @@ header {
       background: #fdc449;
       border-color: rgba(253, 196, 73, 0.85); }
 
-.sub-title {
+.subTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,7 +382,7 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   @media (max-width: 765px) {
-    .sub-title {
+    .subTitle {
       padding-top: 5px; } }
 
 .name {
@@ -398,7 +395,7 @@ header {
     .name {
       font-size: 1.5rem; } }
 
-.display-money {
+.displayMoney {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,14 +406,14 @@ header {
   font-family: 'Press Start 2P', cursive;
   -ms-flex-item-align: center;
   align-self: center; }
-  .display-money h2 {
+  .displayMoney h2 {
     margin-right: 10px;
     font-size: 2rem; }
     @media (max-width: 575px) {
-      .display-money h2 {
+      .displayMoney h2 {
         font-size: 1.5rem; } }
     @media (max-width: 500px) {
-      .display-money h2 {
+      .displayMoney h2 {
         font-size: 1.25rem; } }
 
 .hand {

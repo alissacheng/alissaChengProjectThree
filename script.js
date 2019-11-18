@@ -304,11 +304,11 @@ gameApp.init = function (){
 gameApp.instructions = function(){
 
     $("html").css("overflow", "hidden");
-    $(".ui-dialog").css("top", "-200px")
 
     $(".instructions").dialog({
         width: $("body").width()-50,
         dialogClass: "no-close",
+        position: { my: "center top", at: "top", of: "main" },
         buttons: [
             {   
                 text: "New Game",

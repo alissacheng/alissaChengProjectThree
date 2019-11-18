@@ -55,6 +55,10 @@
     @include landscapeMobile{
         font-size: 1.5rem;
     }
+
+    @include mobile {
+        font-size: 1.25rem;
+    }
 }
 
 //Format money in bank for each player

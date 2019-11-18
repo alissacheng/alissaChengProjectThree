@@ -10,15 +10,15 @@
     <title>BlackJack!</title>
 </head>
 <body>
-    <header>
+    <header class="wrapper">
         <h1>BlackJack️</h1>
-        <h2 class="banner">Player One Goes First</h2>
+        <h2 class="banner"></h2>
     </header>
-    <main>
+    <main class="wrapper">
         <div class="buttons">
-            <button class="hitMe">Hit Me!</button>
-            <button class="stay">Stay</button>
-            <button class="newRound">Next Round</button>
+            <button class="hitMe" disabled="true">Hit Me!</button>
+            <button class="stay" disabled="true">Stay</button>
+            <button class="newRound"disabled="true">Next Round</button>
         </div>
         <section class="playerOne">
             <div class="subTitle">
@@ -38,6 +38,19 @@
                     <h2>Bank:</h2>
                     <p class="money"></p>
                 </div>
+            </div>
+            <div class="hand">
+            </div>
+        </section>
+        <div id="dialog" class="instructions" title="">
+            <p>Player one goes first<br>Win $2/round, $4 for Blackjack<br>Game over at $0<br>Regular Blackjack rules apply.</p>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
             </div>
             <div class="hand">
             </div>

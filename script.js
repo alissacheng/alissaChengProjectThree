@@ -306,7 +306,7 @@ gameApp.instructions = function(){
     $("html").css("overflow", "hidden");
 
     $(".instructions").dialog({
-        width: $("body").width()-50,
+        width: $("body").width()-20,
         dialogClass: "no-close",
         position: { my: "center top", at: "top", of: "main" },
         buttons: [

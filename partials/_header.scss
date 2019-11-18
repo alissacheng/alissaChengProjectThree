@@ -2,13 +2,12 @@ h1{
     font-family: 'Calistoga', cursive;
     font-size: 8rem;
     color: #c6e2ff;
-    animation: neon 0.8s infinite ease-in-out alternate;
+    animation: neon .08s ease-in-out infinite alternate;
     text-transform: uppercase;
     margin: 0;
     padding-bottom: 10px;
     text-align: center;
     letter-spacing: 1.15rem;
-    text-rendering:optimizeLegibility;
 
     @include smallTablet{
         font-size: 6rem;
@@ -51,7 +50,6 @@ header{
         width: 316px;
     }
 }
-
 
 @keyframes neon {
     from {

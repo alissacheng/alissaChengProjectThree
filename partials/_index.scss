@@ -77,6 +77,18 @@
             font-size: 1.25rem;
         }
     }
+
+    .money{
+        font-size: 2rem;
+
+        @include landscapeMobile{
+            font-size: 1.5rem;
+        }
+    
+        @include mobile {
+            font-size: 1.25rem;
+        }
+    }
 }
 
 // Color and format cards when clicked, make visible
@@ -217,5 +229,62 @@
 
     @include landscapeMobile{
         padding: 0 5px;
+    }
+}
+
+// POP UP WINDOW FOR BEGINNING AND END
+//Could not use camel case because classes where predetermined
+.instructions {
+    background: rgb(2, 2, 27);
+    font-family:  'Coda', cursive;
+    color: white;
+    line-height: 1.5;
+    font-size: 4rem;
+    @include flexCenter();
+
+    @include smallTablet{
+        font-size: 2.5rem;
+    }
+
+    p{
+        margin: 50px 0;
+    }
+}
+
+//Title Bar
+.ui-dialog-titlebar{
+    background: rgb(2, 2, 27);
+}
+
+.no-close .ui-dialog-titlebar-close {
+display: none;
+}
+
+//New Game button
+.ui-dialog-buttons {
+    background-color: rgb(2, 2, 27);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.ui-dialog-buttonset > button{
+    cursor: pointer; 
+    font-size: 3rem;
+    width: 200px;
+    background: rgb(255, 174, 0);
+    padding: 2px;
+    border-color: rgba(255, 174, 0, 0.85);
+    border-radius: 5px;
+    font-family: 'Coda', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+
+    &:hover,
+    &:focus{
+        background: rgb(253, 196, 73);
+        border-color: rgba(253, 196, 73, 0.85);
     }
 }

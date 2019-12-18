@@ -243,7 +243,7 @@
     font-family:  'Coda', cursive;
     color: white;
     line-height: 1.5;
-    font-size: 4rem;
+    font-size: 3rem;
     @include flexCenter();
 
     @include smallTablet{
@@ -291,4 +291,8 @@ display: none;
         background: rgb(253, 196, 73);
         border-color: rgba(253, 196, 73, 0.85);
     }
+}
+
+.ui-dialog-content a{
+    color: white;
 }

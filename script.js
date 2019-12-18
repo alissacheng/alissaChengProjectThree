@@ -267,7 +267,7 @@ gameApp.moneyCheck = function (){
     for(i=0; i<players.length;i++){
         if(players[i].money <= 0){
             $(".instructions").dialog();
-            $(".instructions p").text(`${players[i].name}, looks like you're out $20 today!`);
+            $(".instructions p").text(`${players[i].name}, looks like you owe your friend $20 today!!!`);
             $(".newRound").attr("disabled", true);
             $("html").css("overflow", "hidden");
         };

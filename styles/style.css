@@ -568,3 +568,17 @@ header {
 
 .ui-dialog-content a {
   color: white; }
+
+.rules {
+  background: #02021b; }
+  .rules li {
+    font-size: 2rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; }
+
+.rules h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5rem; }
+  .rules h1::after {
+    content: ""; }

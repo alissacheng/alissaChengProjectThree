@@ -1,0 +1,9 @@
+.rules {
+  background: #02021b; }
+  .rules p {
+    font-size: 2rem; }
+
+.rules h1 {
+  text-align: center; }
+  .rules h1::after {
+    content: ""; }

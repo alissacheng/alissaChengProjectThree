@@ -1,3 +1,4 @@
+// Game main heading "Blackjack"
 h1{
     font-family: 'Calistoga', cursive;
     font-size: 8rem;
@@ -21,7 +22,7 @@ h1{
     @include mobile {
         font-size: 4rem;
     }
-
+// After element completes the main heading, after element used due to iphone font issues
         &::after{
             content: "K ♠";
             font-size: 8rem;
@@ -51,7 +52,7 @@ header{
         width: 316px;
     }
 }
-
+// Main heading neon lights animation
 @keyframes neon {
     from {
         text-shadow:

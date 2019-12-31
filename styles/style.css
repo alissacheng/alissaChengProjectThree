@@ -531,9 +531,12 @@ header {
   align-items: center; }
   @media (max-width: 765px) {
     .instructions {
-      font-size: 2.5rem; } }
+      font-size: 2.25rem; } }
   .instructions p {
     margin: 50px 0; }
+    @media (max-width: 575px) {
+      .instructions p {
+        margin: 15px 0; } }
 
 .ui-dialog-titlebar {
   background: #02021b; }

@@ -1,0 +1,18 @@
+.rules{
+    background: rgb(2, 2, 27);
+
+    li{
+        font-size: 2rem;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+.rules h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+
+    &::after{
+        content: "";
+    }
+}

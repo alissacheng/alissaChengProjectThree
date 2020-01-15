@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href=./styles/style.css>
+    <link href="https://fonts.googleapis.com/css?family=Coda|Calistoga|Press+Start+2P|Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/faviconSpade.png">
+    <title>BlackJack!</title>
+</head>
+<body>
+    <header class="wrapper">
+        <!-- Game Title -->
+        <!-- Iphone has issues with the font family used that requires the rest of the heading to be placed in a h1 after element-->
+        <h1>BlackJac</h1>
+        <!-- Instructions Banner -->
+        <h2 class="banner"></h2>
+    </header>
+    <main class="wrapper">
+        <!-- Buttons -->
+        <div class="buttons">
+            <button class="hitMe" disabled="true">Hit Me!</button>
+            <button class="stay" disabled="true">Stay</button>
+            <button class="newRound"disabled="true">Next Round</button>
+        </div>
+        <!-- Player One Gamespace -->
+        <section class="playerOne">
+            <div class="subTitle">
+                <h2 class="name">Player 1</h2>
+                <div class="displayMoney">
+                    <h2>Bank:</h2>
+                    <p class="money"></p>
+                </div>
+            </div>
+            <div class="hand">
+            </div>
+        </section>
+        <!-- Player Two Gamespace -->
+        <section class="playerTwo">
+            <div class="subTitle">
+                <h2 class="name">Player 2</h2>
+                <div class="displayMoney">
+                    <h2>Bank:</h2>
+                    <p class="money"></p>
+                </div>
+            </div>
+            <div class="hand">
+            </div>
+        </section>
+        <!-- Instructions Pop Up -->
+        <div id="dialog" class="instructions" title="">
+            <p>Two player game<br>Win $2/round, $4 for Blackjack<br>$20 buy in, game over at $0<br>New to Blackjack?<br>Click <a target="_blank" href="rules.html" class="rules">here</a> for a list of the rules.</p>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

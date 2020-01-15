@@ -1,0 +1,43 @@
+// GENERAL STYLES
+html{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+.wrapper{
+    max-width: 735px;
+    margin: 0 auto;
+}
+
+body{
+    @include flexCenter;
+    flex-direction: column;
+    background-color: rgb(2, 2, 27);
+    padding-bottom: 15px;
+}
+
+main{
+    width: 735px;
+    background: rgb(65, 164, 86);
+    color: rgb(23, 36, 44);
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+
+    @include smallTablet{
+        width: 568px;
+    }
+
+    @include landscapeMobile{
+        width: 476px;
+    }
+
+    @include mobile{
+        width: 316px;
+        padding: 5px;
+    }
+}
